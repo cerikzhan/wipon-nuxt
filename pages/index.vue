@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <app-header />
+  <div class="indexPage">
     <hero-section
       title="Защитите свой бизнес от <span class='text-primary'>проверок и штрафов</span>"
       btn-type="primary"
-      :image-name="require('~/assets/images/Silverphone.png')"
-    >
+      :image-name="require('~/assets/images/Silverphone.png')">
       <template #helper-text>
         <p class="hero-text">
           Wipon поможет вести законную торговлю алкогольной и табачной продукции
@@ -45,32 +43,28 @@
     <why-section />
     <app-section />
     <media-section />
-    <faq-section />
+    <faq-section ref="faq" />
     <feedback-section />
-    <app-footer />
   </div>
 </template>
 
 <script>
-import AppHeader from '~/components/AppHeader.vue'
-import HeroSection from '~/components/HeroSection'
-import WhySection from '~/components/WhySection'
-import AppSection from '~/components/AppSection'
-import MediaSection from '~/components/MediaSection'
-import FaqSection from '~/components/FaqSection'
-import FeedbackSection from '~/components/FeedbackSection'
-import AppFooter from '~/components/AppFooter'
+import HeroSection from '~/components/HeroSection';
+import WhySection from '~/components/WhySection';
+import AppSection from '~/components/AppSection';
+import MediaSection from '~/components/MediaSection';
+import FaqSection from '~/components/FaqSection';
+import FeedbackSection from '~/components/FeedbackSection';
 
 export default {
+  layout: 'layout',
   components: {
-    AppFooter,
     FeedbackSection,
     FaqSection,
     MediaSection,
     AppSection,
     WhySection,
     HeroSection,
-    AppHeader
-  }
-}
+  },
+};
 </script>

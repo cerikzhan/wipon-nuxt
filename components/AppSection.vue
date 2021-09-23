@@ -1,5 +1,7 @@
 <template>
-  <section id="solution" class="app-section">
+  <section
+    id="solution"
+    class="app-section">
     <div class="container">
       <h2 class="section-title">
         Скачайте приложение на <span class="text-primary">удобный сервис</span> и начните
@@ -24,7 +26,10 @@
               30,000 T
             </p>
             <a href="#" class="btn btn-outline-primary">
-              <img class="arrow-down" src="~/assets/images/arrow-down.svg" alt="arrow down">
+              <img
+                class="arrow-down"
+                src="~/assets/images/arrow-down.svg"
+                alt="arrow down">
               <span>Скачать АРК</span>
             </a>
             <div class="social-links">
@@ -52,7 +57,10 @@
               15,000 T
             </p>
             <a href="#" class="btn btn-outline-primary">
-              <img class="arrow-down" src="~/assets/images/arrow-down.svg" alt="arrow down">
+              <img
+                class="arrow-down"
+                src="~/assets/images/arrow-down.svg"
+                alt="arrow down">
               <span>Скачать</span>
             </a>
             <a class="card-question" href="#">Где приобрести сканер?</a>
@@ -75,7 +83,10 @@
               12,000 T
             </p>
             <a href="#" class="btn btn-outline-primary">
-              <img class="arrow-down" src="~/assets/images/arrow-down.svg" alt="arrow down">
+              <img
+                class="arrow-down"
+                src="~/assets/images/arrow-down.svg"
+                alt="arrow down">
               <span>Скачать АРК</span>
             </a>
             <div class="social-links two-child">
@@ -94,6 +105,23 @@
 </template>
 <script>
 export default {
-  name: 'AppSection'
-}
+  name: 'AppSection',
+  // watch: {
+  //   $route: {
+  //     handler(newVal) {
+  //       if (newVal.params.goTo === 'solution') {
+  //         this.$nextTick(() => {
+  //           const goToBlock = this.$refs[newVal.params.goTo].$el.getBoundingClientRect().top + pageYOffset;
+  //           window.scrollTo({
+  //             top: goToBlock,
+  //             behavior: 'smooth',
+  //           });
+  //         });
+  //       }
+  //     },
+  //     immediate: true,
+  //     deep: true,
+  //   },
+  // },
+};
 </script>
