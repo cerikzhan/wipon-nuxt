@@ -25,13 +25,20 @@
             <p class="price">
               30,000 T
             </p>
-            <a href="#" class="btn btn-outline-primary">
-              <img
-                class="arrow-down"
-                src="~/assets/images/arrow-down.svg"
-                alt="arrow down">
-              <span>Скачать АРК</span>
-            </a>
+            <div class="btn-dropdown">
+              <span class="main-text">
+                <img
+                  class="arrow-down"
+                  src="~/assets/images/arrow-down.svg"
+                  alt="arrow down">
+                <span>Скачать АРК</span>
+              </span>
+
+              <div class="drop-down">
+                <a class="dropdown-item" href="#">Скачать apk для Zebra MC36, Honeywell EDA50K</a>
+                <a class="dropdown-item" href="#">Скачать apk для Zebra EMDK</a>
+              </div>
+            </div>
             <div class="social-links">
               <a href="#" class="store google-store">
                 <img src="~/assets/images/google-store.svg" alt="">
@@ -106,22 +113,5 @@
 <script>
 export default {
   name: 'AppSection',
-  // watch: {
-  //   $route: {
-  //     handler(newVal) {
-  //       if (newVal.params.goTo === 'solution') {
-  //         this.$nextTick(() => {
-  //           const goToBlock = this.$refs[newVal.params.goTo].$el.getBoundingClientRect().top + pageYOffset;
-  //           window.scrollTo({
-  //             top: goToBlock,
-  //             behavior: 'smooth',
-  //           });
-  //         });
-  //       }
-  //     },
-  //     immediate: true,
-  //     deep: true,
-  //   },
-  // },
 };
 </script>
