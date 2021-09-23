@@ -1,15 +1,9 @@
 <template>
   <section class="hero-section" :class="{'terminal': isTerminal}">
     <div class="container">
-      <div class="text-container">
+      <div class="text-container order-text">
         <h2 class="section-title" v-html="title"></h2>
-        <slot name="helper-text"></slot>
         <a
-          v-if="btnType === 'primary'"
-          href="#"
-          class="btn btn-primary">Скачать приложение</a>
-        <a
-          v-if="btnType === 'link'"
           href="#"
           class="btn btn-link"
           :class="{'opened': !hidden}"
@@ -18,14 +12,12 @@
           <img src="~/assets/images/chevron-down.svg" alt="chevron down">
         </a>
       </div>
-      <div class="image-container">
+      <div class="image-container order-image">
         <div class="phone-img">
-          <slot name="card-success"></slot>
           <img
             class="macbook"
             :src="imageName"
             :alt="imageName">
-          <slot name="card-danger"></slot>
         </div>
       </div>
     </div>
@@ -42,10 +34,6 @@ export default {
     imageName: {
       type: String,
       required: true,
-    },
-    btnType: {
-      type: String,
-      default: '',
     },
     isTerminal: {
       type: Boolean,

@@ -14,7 +14,7 @@
           <h4 class="question-title" @click="item.opened = !item.opened">
             {{ item.title }}
           </h4>
-          <p v-if="item.opened" class="question-answer">
+          <p class="question-answer">
             {{ item.answer }}
           </p>
         </div>
