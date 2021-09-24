@@ -63,7 +63,10 @@
             <p class="price">
               15,000 T
             </p>
-            <a href="#" class="btn btn-outline-primary">
+            <a
+              href="/wipon.jar"
+              download
+              class="btn btn-outline-primary">
               <img
                 class="arrow-down"
                 src="~/assets/images/arrow-down.svg"
@@ -100,7 +103,7 @@
               <a href="#" class="store google-store">
                 <img src="~/assets/images/google-store.svg" alt="google-store">
               </a>
-              <a href="#" class="store app-store">
+              <a href="https://apps.apple.com/ru/app/wipon-pro/id1179029540" class="store app-store">
                 <img src="~/assets/images/app-store.svg" alt="app store">
               </a>
             </div>

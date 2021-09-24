@@ -9,7 +9,7 @@
           <p class="hero-text">
             Wipon поможет вести законную торговлю алкогольной и табачной продукции
           </p>
-          <a href="#" class="btn btn-primary">
+          <a href="https://new.wipon.pro/" class="btn btn-primary">
             Скачать приложение
           </a>
         </div>

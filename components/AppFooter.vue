@@ -3,8 +3,14 @@
     <div class="container">
       <div class="footer-col logo-wrapper">
         <div class="logo">
-          <img class="wipon-text" src="~/assets/images/wipon-text.svg" alt="wipon text">
-          <img class="wipon-logo" src="~/assets/images/wipon-logo.svg" alt="wipon logo">
+          <img
+            class="wipon-logo"
+            src="~/assets/images/wipon-logo.svg"
+            alt="wipon logo">
+          <img
+            class="wipon-text"
+            src="~/assets/images/wipon-text.svg"
+            alt="wipon text">
         </div>
         <p class="copywrites">
           © Wipon 2021
@@ -37,6 +43,6 @@
 
 <script>
 export default {
-  name: 'AppFooter'
-}
+  name: 'AppFooter',
+};
 </script>

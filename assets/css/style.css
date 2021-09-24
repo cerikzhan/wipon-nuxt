@@ -41,8 +41,8 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #000000;
-  opacity: 0.5;
+  background-color: #081D34CC;
+  opacity: 0.8;
   z-index: 8;
 }
 
@@ -258,11 +258,7 @@ a:hover {
   height: 3px;
   background-color: var(--primary-color);
   transition: transform .3s ease-in-out;
-  transition-delay: .5s;
-}
-
-.header .menu-burger:hover .burger-item.bottom {
-  width: 100%;
+  transition-delay: .4s;
 }
 
 .hero-section {
@@ -641,6 +637,15 @@ a:hover {
   max-width: 100%;
   height: 240px;
   padding: 10px;
+}
+
+.feedback-section .btn-submit {
+  max-width: 405px;
+  min-width: 30%;
+  padding: 15px 0;
+  border: none;
+  cursor: pointer;
+  font-size: var(--regular-font-size);
 }
 
 /* ======================== Instruction page =================== */
@@ -1150,6 +1155,10 @@ a:hover {
 
   .feedback-section .inner-wrapper {
     padding: 15px;
+  }
+
+  .feedback-section .btn-submit {
+    min-width: 50%;
   }
 
   .explanation-section .contacts {

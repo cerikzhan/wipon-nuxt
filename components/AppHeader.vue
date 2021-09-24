@@ -2,7 +2,7 @@
   <header class="header" :class="{'opened': opened}">
     <div class="container">
       <div class="logo-wrapper">
-        <a href="#" class="logo-lin">
+        <a href="https://wiponapp.com/" class="logo-lin">
           <img src="~/assets/images/wipon_pro_logo.svg" alt="wipon pro">
         </a>
       </div>
@@ -11,7 +11,7 @@
           v-for="item in navList"
           :key="item.url"
           class="navbar-item"
-          @click="toggleNavbar">
+          @click="navItemClicked">
           <nuxt-link
             :to="item.url"
             class="navbar-link">
@@ -19,7 +19,7 @@
           </nuxt-link>
         </li>
         <li class="navbar-item btn-wrapper">
-          <a href="#" class="btn btn-outline-primary">Для потребителей</a>
+          <a href="https://wiponapp.com/for-user" class="btn btn-outline-primary">Для потребителей</a>
         </li>
       </ul>
       <div
@@ -77,6 +77,11 @@ export default {
     toggleNavbar() {
       this.opened = !this.opened;
       this.$emit('toggle');
+    },
+    navItemClicked() {
+      if (this.opened) {
+        this.toggleNavbar();
+      }
     },
   },
 };
